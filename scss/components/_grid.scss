@@ -1,0 +1,42 @@
+.container {
+  font-size: $font-size--base;
+  line-height: $line-height--base;
+  padding-top: em(50, 18);
+  margin: 0 auto;
+  width: $base__width;
+  max-width: $base__max-width;
+}
+
+.centered {
+  margin: auto;
+}
+
+.grid__row {
+  @include create-flex($dir: column, $wrap: wrap, $justify: center, $align-i: flex-start);
+  margin-bottom: em(40, 18);
+  @include mq('md') {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@for $i from 1 through $grid__col-size {
+  .grid__col--#{$i} {
+    color: $grid__t-color;
+    padding: $grid__col-padding;
+    margin-bottom: $grid__col-margin;
+    width: 100%;
+    border-radius: $grid__border-rad;
+    @include mq('md') {
+      @include create-flex($wrap: wrap, $justify: space-around, $align-i: center);
+      width: column-width($i);
+      margin-bottom: 0;
+    }
+    
+    &.theme__colors {
+      @include generate-color($number: #{$i});
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// ======================================
+//  Functions
+// ======================================
+ 
+// ====PX TO EM ====
+@function em($px, $context: 16) {
+  @return #{$px / $context}em;
+}
+
+// ==== GRID MAGIC-GENERATOR ====
+
+@function column-width($column: null, $size: $grid__col-size, $gutter: $grid__col-gutter) {
+  $column-width: $column / $size * 100 * 1%;
+  $column-gutter: $gutter / 2;
+  $result: calc(#{$column-width} - #{$column-gutter});
+  @return $result;
+}

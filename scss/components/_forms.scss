@@ -1,0 +1,27 @@
+.form {
+  @include create-flex($dir: column);
+  @include mq('md') {
+    width: 100%;
+  }
+  &__label {
+    &--hidden {
+      visibility: hidden;
+    }
+  }
+  &__input {
+    margin-top: 12px;
+    padding: 0 0 16px 0;
+    outline: none;
+    border: none;
+    border-bottom: 6px solid $base--border-color;
+    transition: all .3s;
+    color: $color-text--base;
+    font-weight: 700;
+    &:nth-last-of-type(1) {
+      margin-bottom: 25px;
+    }
+    &:focus {
+      border-bottom: 8px solid $base--border-color;
+    }
+  }
+}

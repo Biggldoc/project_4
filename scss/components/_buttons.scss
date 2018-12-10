@@ -1,0 +1,27 @@
+// ======================================
+//  Button Styles
+// ======================================
+
+
+@each $theme, $color in $btns__theme-array {
+  .btn--#{$theme} {
+    width: 100%;
+    padding: 12px 55px 12px;
+    margin-bottom: 25px;
+    background-color: $color;
+
+    border: none;
+    border-radius: $btn__border-rad;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $btn__t-color;
+    @include mq('lg') {
+      width: 45%;
+    }
+    @include mq('xl') {
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+}

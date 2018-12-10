@@ -1,0 +1,123 @@
+// ======================================
+//  Variables
+// ======================================
+
+// === FONTS ===
+
+$font-main        : 'Quicksand', sans-serif;
+$font-blockquote  : 'Shadows Into Light', cursive;
+
+// === GENERAL ===
+
+$base__width    : 85%;
+$base__max-width: 1100px;
+
+// === GRID SETTINGS ===
+
+$grid__col-size   : 12;
+
+
+$grid__col-gutter : 13px;
+$grid__col-margin : 6px; // MARGIN-BOTTOM
+$grid__col-padding: 15px;
+$grid__border-rad : 7px;
+
+
+
+// === DESCRIPTIVE COLOR VARIABLES ===
+
+$white            : #fff;
+$black            : #000;
+$grey             : #666;
+$grey-light       : #9A9A9A;
+$grey-smoke       : #818181;
+$limed-spruce     : #313E46;
+$robins-egg       : #00E2C1;
+$cyan             : #00DEFD;
+$caribbean-green  : #00CD7F;
+$salmon           : #FF767B;
+$coral            : #FF7953;
+$east-side        : #9B7CC5;
+$bright-turquoise : #00E9D1;
+$cerulean         : #00ACCC;
+$aqua             : #00E7FE;
+$french-lilac     : #EDB3F1;
+$shamroc          : #4CDA9F;
+$sweet-pink       : #FFA0A5;
+$vivid-tangerine  : #FFA085;
+$alto             : #CECECE;
+
+// === FUNCTIONAL COLOR VARIABLES ===
+
+$grid__t-color: $grey-smoke;
+
+$grid__bg-colors: (
+  '12': $bright-turquoise,
+  '8' : $vivid-tangerine,
+  '7' : $sweet-pink,
+  '6' : $cerulean,
+  '5' : $shamroc,
+  '4' : $aqua,
+  '3' : $french-lilac,
+);
+
+// === BASE VARIABLES ===
+
+$color-primary : $white;
+$base--border-color: $robins-egg;
+
+
+
+$font-size--base       : 18px;
+$line-height--base     : 1.4;
+$color-text--base      : $grey;
+$color-text--light     : $grey-light;
+$color-text--dark      : $limed-spruce;
+
+$color-headers--base   : $robins-egg;
+
+$color-link--default   : $cyan;
+
+
+// === TYPOGRPAHY ==
+$blockquote__border-rad: 7px;
+// === NAVIGATION ===
+
+$nav__border-rad: 6px;
+$nav__font-size : 18px;
+
+$nav-items--bg: $robins-egg;
+$nav-items--hover: $white;
+
+// === BUTTONS ===
+
+$btn__t-color: $white;
+$btn__border-rad: 7px;
+
+// === FORM ===
+
+// === IMG ===
+$frame__border-color : $alto;
+
+$btns__theme-array: (
+  'default': $cyan,
+  'success' : $caribbean-green,
+  'error'  : $salmon,
+  'warning': $coral,
+  'info'   : $east-side,
+);
+
+
+$breakpoints: (
+  'xs': 575px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1199px,
+);
+
+
+
+
+
+

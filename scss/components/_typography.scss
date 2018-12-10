@@ -1,0 +1,43 @@
+// IMPORT FONTS
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+//=====
+p {
+  color: $color-text--light;
+}
+
+.container {
+  font-family: $font-main;
+}
+
+.link {
+  text-decoration: none;
+  color: $color-link--default;
+  font-weight: 700;
+}
+
+.headline--primary {
+  color: $color-headers--base;
+  padding-left: 15px;
+  @include mq ('lg') {
+    margin-bottom: 30px;
+  }
+}
+
+.headline--secondary {
+  margin-top: 24px;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+.blockquote {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  font-size: 1.3em;
+  border-radius: $blockquote__border-rad;
+  border-left: 9px solid $base--border-color;
+  font-family: $font-blockquote;
+}

@@ -1,0 +1,20 @@
+// ======================================
+//  Image Styles
+// ======================================
+
+.img {
+  &--avatar {
+    @extend %center-b;
+    @include mq('md') {
+    }
+  }
+  &--logo {
+    @extend %center-b;
+  }
+  &--frame {
+    max-width: 100%;
+    @extend %center-b;
+    padding: 13px;
+    border: 1px solid $frame__border-color;
+  }
+}

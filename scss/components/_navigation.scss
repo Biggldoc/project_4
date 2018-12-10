@@ -1,0 +1,32 @@
+// ======================================
+//  Navigation Styles
+// ======================================
+
+.nav {
+  font-size: $nav__font-size;
+  @include mq('md') {
+    @include create-flex($dir: row, $justify: right, $align-i: flex-start);
+    margin-top: 15px;
+  }
+  &__item {
+    display: block;
+    text-align: center;
+    border-radius: $nav__border-rad;
+    &:hover {
+      background-color: $nav-items--bg;
+    }
+  }
+  &__item a {
+    padding: 15px;
+    color: $color-text--base;
+    display: block;
+    text-decoration: none;
+    @include mq('xl') {
+      padding: 15px 20px 15px 20px;
+    }
+    &:hover {
+      color: $nav-items--hover;
+    }
+  }
+}
+

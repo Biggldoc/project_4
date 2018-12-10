@@ -1,0 +1,54 @@
+// =========================================
+//  Mixins
+// =========================================
+
+// === CREATE FLEX-CONTAINER
+
+@mixin create-flex(
+  $dp: flex,
+  $dir: null,
+  $wrap: null,
+  $justify: null,
+  $align-i: null,
+  $align-c: null) {
+    display: $dp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align-i;
+    align-content: $align-c;
+    @content;
+  }
+
+// === MEDIA QUERIES ===
+
+@mixin mq($break) {
+  $value: map-get($breakpoints, $break);
+  @if $value == null {
+    @warn " '#{$break}' is not a valid breakpoint name";
+  }
+  @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+// === GRID-COLOR GENERATOR ===
+
+@mixin generate-color($number: null) {
+  $bg-color: map-get($grid__bg-colors, $number);
+    background-color: $bg-color;
+}
+
+ 
+
+ 
+
+
+
+
+
+
+
+
