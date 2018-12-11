@@ -36,8 +36,11 @@ p {
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 0 25px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   border-radius: $blockquote__border-rad;
   border-left: 9px solid $base--border-color;
   font-family: $font-blockquote;
+  @include mq('lg') {
+    font-size: 1.3em;
+  }
 }

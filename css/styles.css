@@ -866,11 +866,14 @@ p {
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 0 25px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   -webkit-border-radius: 7px;
           border-radius: 7px;
   border-left: 9px solid #00E2C1;
   font-family: "Shadows Into Light", cursive; }
+  @media (min-width: 992px) {
+    .blockquote {
+      font-size: 1.3em; } }
 
 .form {
   display: -webkit-box;
@@ -959,9 +962,6 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff; }
-  @media (min-width: 992px) {
-    .btn--default {
-      width: 45%; } }
   @media (min-width: 1199px) {
     .btn--default {
       width: auto;
@@ -978,9 +978,6 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff; }
-  @media (min-width: 992px) {
-    .btn--success {
-      width: 45%; } }
   @media (min-width: 1199px) {
     .btn--success {
       width: auto;
@@ -997,9 +994,6 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff; }
-  @media (min-width: 992px) {
-    .btn--error {
-      width: 45%; } }
   @media (min-width: 1199px) {
     .btn--error {
       width: auto;
@@ -1016,9 +1010,6 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff; }
-  @media (min-width: 992px) {
-    .btn--warning {
-      width: 45%; } }
   @media (min-width: 1199px) {
     .btn--warning {
       width: auto;
@@ -1035,9 +1026,6 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff; }
-  @media (min-width: 992px) {
-    .btn--info {
-      width: 45%; } }
   @media (min-width: 1199px) {
     .btn--info {
       width: auto;
